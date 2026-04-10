@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered YouTube Iframe</title>
+    <style>
+        /* * Resets default user agent margins, sets a black background, 
+         * and establishes a flex formatting context for absolute centering. 
+         */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* * Binds the dimensions to 45% of the viewport width and height.
+         * Removes the default iframe border.
+         */
+        .youtube-iframe {
+            width: 45vw;
+            height: 45vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe 
+        class="youtube-iframe"
+        src="https://www.youtube.com/embed/YdVkZHwPZHY?autoplay=0&rel=0" 
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</body>
+</html>
