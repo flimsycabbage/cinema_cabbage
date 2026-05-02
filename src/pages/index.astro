@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="flimsycabbage">
+	<div class="background-container">
+		<div class="hero-content">
+			<h1><a href="/manifest/" class="hero-link">MANIFEST</a></h1>
+			<h1><a href="/sonics/" class="hero-link">SONICS</a></h1>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		align-items: flex-start;
+	}
+
+	h1 {
+		margin: 0;
+		text-align: left;
+	}
+
+	.hero-link {
+		color: inherit;
+		text-decoration: none;
+		transition: opacity 0.3s ease;
+	}
+
+	.hero-link:hover {
+		opacity: 0.7;
+	}
+</style>
